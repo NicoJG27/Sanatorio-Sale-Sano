@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Citas - Gestión Hospitalaria</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/prescripcion.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <span class="header-title">Módulo de Prescripciones</span>
+            <nav class="header-nav">
+                <a href="index.html"> Volver al Menú Principal</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="main-title">Citas del Día</h1>
+
+
+        <a href="buscaPaciente.html" class="button button-secondary">
+            Buscar Paciente (sin cita)
+        </a>
+
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Paciente</th>
+                    <th>Motivo de Consulta</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00</td>
+                    <td>Elena García Martínez</td>
+                    <td>Revisión postoperatoria</td>
+                    <td><a href="detalleCita.html" class="button button-primary">Ver Detalle</a></td>
+                </tr>
+                <tr>
+                    <td>09:30</td>
+                    <td>Carlos Rodríguez Pérez</td>
+                    <td>Dolor de cabeza crónico</td>
+                    <td><a href="detalleCita.html" class="button button-primary">Ver Detalle</a></td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td>Ana López Fernández</td>
+                    <td>Resultados de analítica</td>
+                    <td><a href="detalleCita.html" class="button button-primary">Ver Detalle</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+</body>
+
+</html>
