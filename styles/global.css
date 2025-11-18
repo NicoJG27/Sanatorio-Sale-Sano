@@ -1,0 +1,211 @@
+
+/* Variables de Colores */
+:root {
+    --color-primary: #0d47a1;
+    --color-primary-hover: #1976d2;
+    --color-secondary: #6c757d;
+    --color-secondary-hover: #5a6268;
+    --color-success: #2e7d32;
+    --color-success-hover: #1b5e20;
+    --color-background: #f8f9fa;
+    --color-text: #333333;
+    --color-white: #ffffff;
+    --color-border: #dee2e6;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+html {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-primary);
+    margin-top: 0;
+}
+
+h1.main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem; 
+}
+
+
+.main-header {
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    padding: 1rem 0;
+    box-shadow: var(--shadow);
+}
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+.header-nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.header-nav a {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+.header-nav span {
+    color: var(--color-text);
+}
+
+
+.card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+.card-disabled {
+    background-color: #f0f0f0;
+}
+.card-disabled h2 {
+    color: #999;
+}
+.card-disabled p {
+    color: #777;
+}
+
+
+
+.button {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: var(--color-secondary-hover);
+    text-decoration: none;
+}
+.button-primary {
+    background-color: var(--color-primary);
+}
+.button-primary:hover {
+    background-color: var(--color-primary-hover);
+}
+.button-success {
+    background-color: var(--color-success);
+}
+.button-success:hover {
+    background-color: var(--color-success-hover);
+}
+.button-full {
+    width: 100%;
+}
+.button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+/* Formularios (Forms) */
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 0.25rem;
+}
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="search"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.color-swatch {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    font-size: 0.9rem;
+    box-shadow: var(--shadow);
+}
+.color-swatch strong {
+    font-size: 1rem;
+    display: block;
+}
+.button-showcase {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
