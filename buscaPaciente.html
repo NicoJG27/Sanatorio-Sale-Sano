@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Pacientes - Gestión Hospitalaria</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/prescriptions.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <span class="header-title">Módulo de Prescripciones</span>
+            <nav class="header-nav">
+                <a href="lista.html"> Volver a la Lista de Citas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="main-title">Búsqueda de Pacientes</h1>
+        <p>Para pacientes sin cita previa.</p>
+
+        <div class="card">
+            <form action="detalleCita.html">
+                <div class="form-group">
+                    <label for="search">Buscar por Nombre o Nº Historia</label>
+                    <input type="search" id="search" placeholder="Buscar...">
+                </div>
+                <button type="submit" class="button button-primary">Buscar</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>Resultados de Búsqueda</h2>
+            <p>(La búsqueda mostraría resultados aquí)</p>
+            <div class="search-result">
+                <span>Martínez, Antonio (Nº 123456-07)</span>
+                <a href="detalleCita.html" class="button button-primary">Seleccionar</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

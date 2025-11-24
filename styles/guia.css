@@ -1,0 +1,27 @@
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.color-swatch {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    font-size: 0.9rem;
+    box-shadow: var(--shadow);
+}
+.color-swatch strong {
+    font-size: 1rem;
+    display: block;
+}
+.button-showcase {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}

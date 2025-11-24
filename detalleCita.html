@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Cita - Gestión Hospitalaria</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/prescriptions.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <span class="header-title">Módulo de Prescripciones</span>
+            <nav class="header-nav">
+                <!-- Enlace actualizado -->
+                <a href="lista.html">&larr; Volver a la Lista de Citas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="main-title">Detalle de Cita</h1>
+
+        <div class="card">
+            <h2>Información del Paciente</h2>
+            <ul class="info-list">
+                <li><strong>Paciente:</strong> Elena García Martínez</li>
+                <li><strong>Nº Historia:</strong> 456789-01</li>
+                <li><strong>Hora Cita:</strong> 09:00</li>
+                <li><strong>Motivo:</strong> Revisión postoperatoria</li>
+            </ul>
+            <!-- Enlace actualizado -->
+            <a href="historial.html" class="button button-secondary">
+                Ver Historia Clínica
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>Registro de Prescripción</h2>
+            <!-- Formulario actualizado -->
+            <form action="lista.html">
+                <div class="form-group">
+                    <label for="medication">Medicamento</label>
+                    <input type="text" id="medication" placeholder="Ej: Ibuprofeno 600mg">
+                </div>
+                <div class="form-group">
+                    <label for="dosage">Dosis y Pauta</label>
+                    <input type="text" id="dosage" placeholder="Ej: 1 comprimido cada 8 horas">
+                </div>
+                <div class="form-group">
+                    <label for="notes">Notas Adicionales</label>
+                    <textarea id="notes" placeholder="Ej: Tomar después de las comidas"></textarea>
+                </div>
+                <button type="submit" class="button button-success">Guardar Prescripción</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
