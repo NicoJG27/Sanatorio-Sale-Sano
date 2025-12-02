@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de Medicación</title>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <h1>Unidad de Enfermería</h1>
+      <nav class="header-nav">
+        <a href="index.html"> Volver a ENFERMERÍA</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="titulo-pagina">Medicación: Juan Pérez García (Cama 201)</h1>
+
+    <!-- Reutilizamos el contenedor grid de las camas -->
+    <div class="bed-grid">
+
+      <!-- Medicamento 1 -->
+      <article class="bed-card">
+        <div class="bed-card__header">
+          <h3>Omeprazol</h3>
+          <!-- Reutilizamos badge--free (verde) para "Administrado" -->
+          <span class="badge badge--free">Administrado</span>
+        </div>
+        <div class="bed-card__info">
+          <p><strong>Dosis:</strong> 20mg</p>
+          <p><strong>Vía:</strong> Oral</p>
+          <p><strong>Hora:</strong> 08:00</p>
+        </div>
+        <div class="bed-card__actions">
+          <button class="button button-primary">Ver Detalles</button>
+        </div>
+      </article>
+
+      <!-- Medicamento 2 -->
+      <article class="bed-card">
+        <div class="bed-card__header">
+          <h3>Paracetamol</h3>
+          <span class="badge badge--free">Administrado</span>
+        </div>
+        <div class="bed-card__info">
+          <p><strong>Dosis:</strong> 1g</p>
+          <p><strong>Vía:</strong> Intravenosa (IV)</p>
+          <p><strong>Hora:</strong> 09:00</p>
+        </div>
+        <div class="bed-card__actions">
+          <button class="button button-primary">Ver Detalles</button>
+        </div>
+      </article>
+
+      <!-- Medicamento 3 -->
+      <article class="bed-card">
+        <div class="bed-card__header">
+          <h3>Ibuprofeno</h3>
+          <!-- Reutilizamos badge--occupied (amarillo) para "Pendiente" -->
+          <span class="badge badge--occupied">Pendiente</span>
+        </div>
+        <div class="bed-card__info">
+          <p><strong>Dosis:</strong> 600mg</p>
+          <p><strong>Vía:</strong> Oral (con comida)</p>
+          <p><strong>Hora:</strong> 14:00</p>
+        </div>
+        <div class="bed-card__actions">
+          <button class="button button-success">Administrar</button>
+        </div>
+      </article>
+
+      <!-- Medicamento 4 -->
+      <article class="bed-card">
+        <div class="bed-card__header">
+          <h3>Heparina</h3>
+          <span class="badge badge--occupied">Pendiente</span>
+        </div>
+        <div class="bed-card__info">
+          <p><strong>Dosis:</strong> 40mg</p>
+          <p><strong>Vía:</strong> Subcutánea</p>
+          <p><strong>Hora:</strong> 20:00</p>
+        </div>
+        <div class="bed-card__actions">
+          <button class="button button-success">Administrar</button>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+    <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>

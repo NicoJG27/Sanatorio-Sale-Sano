@@ -1,0 +1,35 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+
+.button {
+
+    @include m.button-variant(v.$color-secondary, v.$color-secondary-hover);
+
+    &-primary {
+        @include m.button-variant(v.$color-primary, v.$color-primary-hover);
+    }
+
+    &-success {
+        @include m.button-variant(v.$color-success, v.$color-success-hover);
+    }
+
+    &-full {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+.badge {
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    color: v.$color-white; 
+
+    &--free { background-color: v.$color-success; }
+    &--occupied { background-color: v.$color-warning; color: #000; }
+    &--cleaning { background-color: v.$color-danger; }
+}
